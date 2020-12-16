@@ -1,0 +1,67 @@
+:root {
+    --color    : var(--secundary-color);
+    --color-alt: var(--secundary-color-alt);
+}
+
+.button {
+    cursor          : pointer;
+    padding         : 12px 24px;
+    font-weight     : 600;
+    border-radius   : .5rem;
+    color           : #fff;
+    background-color: var(--color);
+    border          : 1px solid var(--color);
+    font-family     : var(--font-family-body);
+    margin-bottom   : 12px;
+    margin-top      : 12px;
+    outline         : 0;
+}
+
+/* Para poder cambiar el color sin alterar el */
+.button.green {
+    --color    : limegreen;
+    --color-alt: green;
+}
+
+.button:hover {
+    background-color: var(--color-alt);
+}
+
+.button.ghost {
+    background-color: transparent;
+    color           : var(--color);
+
+}
+
+button.ghost:hover {
+    background-color: var(--color);
+    color           : #fff;
+}
+
+.button.dark {
+    background-color: var(--color-alt);
+
+}
+
+.button.dark:hover {
+    background-color: var(--color);
+
+}
+
+.button.transparent {
+    background-color: transparent;
+    border          : none;
+    font-size       : var(--menu-font-size);
+    color           : var(--color);
+
+}
+
+.button.transparent:hover {
+    color: var(--color-alt);
+}
+
+/* Para declarar en el HTML
+<button class="button">Normal</button>
+<button class="button ghost">Ghost</button>
+<button class="button dark">Dark</button>
+<button class="button transparent">Transparent</button> */
