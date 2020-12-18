@@ -1,0 +1,57 @@
+<div class="modal " id="modal">
+    <div class="content">
+        <div class="container-form " >
+            <label for="show" class="close-btn fas fa-times" id="close-modal" ></label>
+            
+            <!-- Formuarlio -->
+            <h4>Solicitar información</h4>
+            <p class="subtitulo-formulario">Planifica la llegada de tu bebé a través de cómodos pagos hasta el momento de dar a luz.</p>
+            <form action="#">
+                <div class="data">
+                    <label class="modal-label " for="">Su nombre</label>
+                    <input 
+                    class="input-formulario" 
+                    placeholder="Incluye tu nombre y apellidos"
+                    type="text" 
+                    value="" 
+                    name="nom_paci"
+                    id="nom_paci"
+                    minlength="6"
+                    minlength="6"
+                    required>
+                </div>
+
+                <div class="data">
+                    <label class="modal-label" for="">Celular o WhatsApp</label>
+                    <input 
+                    class="input-formulario" 
+                    placeholder="Ingresa tu número de celular"
+                    type="number" 
+                    value=""
+                    name="num_tele"
+                    
+                    maxlength="11"
+                    required>
+                </div>
+           
+                <div class="data">
+                    <label class="modal-label" for="">Tu correo electrónico</label>
+                    <input 
+                    class="input-formulario" 
+                    placeholder="Ingresa tu correo electronico"
+                    type="email" 
+                    value="" 
+                    name="des_mail" 
+                    id="des_mail" 
+                    required>
+                </div>
+
+                <!-- <div class="terms">
+                    <input type="checkbox" name="terms" onclick="disableSending()">
+                    <label for="terms">Acepto recibir información de promociones.</label>
+                </div> -->
+                <button type="submit" class="formulario-submit button dark" value="Enviar" >Enviar datos</button>
+            </form>
+        </div>
+    </div>
+</div>

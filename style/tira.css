@@ -1,0 +1,33 @@
+section.tira-slider {
+    display      : flex;
+    padding      : 12px 24px;
+    box-shadow   : 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 50px 50px 50px 50px;
+    margin-top   : -60px;
+    margin-bottom: 100px;
+    position     : relative;
+    background   : #fff;
+    z-index      : var(--z-normal);
+    flex-wrap    : nowrap;
+}
+
+.tira-slider .tira-item {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 8px;
+}
+
+
+/* .div-txt {
+    padding-right: 32px;
+} */
+
+.tira-slider .tira-text{
+    padding     : 0;
+    padding-left: 12px;
+}
+
+.tira-slider.tira-slider p{
+    padding-bottom: initial;
+}

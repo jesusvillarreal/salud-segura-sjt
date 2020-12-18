@@ -17,6 +17,9 @@
         <!-- Personales -->
         <link rel="stylesheet" href="/style/style-global.css">
         <link rel="stylesheet" href="/style/botones.css">
+        <link rel="stylesheet" href="/style/header.css">
+        <link rel="stylesheet" href="/style/slider.css">
+        <link rel="stylesheet" href="/style/tira.css">
         <link rel="stylesheet" href="/style/flotantes.css">
     
         <!-- OWL Carrousel -->
@@ -29,12 +32,12 @@
     
 <header>
 
-    <nav class="cabecera">
-        <div class="container cabecera-container">
+    <nav class="header">
+        <div class="container header-container">
             <a href="#">
-                <img src="/img/site/Logo-a-colores-SJT.png" alt="Logo San Judas Tadeo" class="cabecera-logo">
+                <img src="/img/site/Logo-a-colores-SJT.png" alt="Logo San Judas Tadeo" class="header-logo">
             </a>
-            <button class="cabecera-boton button">Solicitar Información</button>
+            <button class="header-boton button">Solicitar Información</button>
 
         </div>
     </nav>
@@ -43,93 +46,134 @@
 
 <main>
  <!-- Modal de formulario -->
- <div class="modal " id="modal">
-    <div class="content">
-        <div class="container-form " >
-            <label for="show" class="close-btn fas fa-times" id="close-modal" ></label>
-            
-            <!-- Formuarlio -->
-            <h4>Solicitar información</h4>
-            <p class="subtitulo-formulario">Planifica la llegada de tu bebé a través de cómodos pagos hasta el momento de dar a luz.</p>
-            <form action="#">
-                <div class="data">
-                    <label class="modal-label " for="">Su nombre</label>
-                    <input 
-                    class="input-formulario" 
-                    placeholder="Incluye tu nombre y apellidos"
-                    type="text" 
-                    value="" 
-                    name="nom_paci"
-                    id="nom_paci"
-                    minlength="6"
-                    minlength="6"
-                    required>
-                </div>
 
-                <div class="data">
-                    <label class="modal-label" for="">Celular o WhatsApp</label>
-                    <input 
-                    class="input-formulario" 
-                    placeholder="Ingresa tu número de celular"
-                    type="number" 
-                    value=""
-                    name="num_tele"
-                    
-                    maxlength="11"
-                    required>
-                </div>
-           
-                <div class="data">
-                    <label class="modal-label" for="">Tu correo electrónico</label>
-                    <input 
-                    class="input-formulario" 
-                    placeholder="Ingresa tu correo electronico"
-                    type="email" 
-                    value="" 
-                    name="des_mail" 
-                    id="des_mail" 
-                    required>
-                </div>
-
-                <!-- <div class="terms">
-                    <input type="checkbox" name="terms" onclick="disableSending()">
-                    <label for="terms">Acepto recibir información de promociones.</label>
-                </div> -->
-                <button type="submit" class="formulario-submit button dark" value="Enviar" >Enviar datos</button>
-            </form>
-        </div>
-    </div>
-</div>
 <!-- Fin Modal formulario -->
 
 <!-- Slider -->
 <section class="slider">
-    <img src="" alt="">
+    <div class="bck-slider">
+        <div class="loop owl-carousel owl-theme">
+
+            <!-- Slider 1  -->
+            <div class="item flex slide-1">
+                <div class="container flex container-slider">
+                    <div class="col-2 slider-img">
+                        <img src="/img/images/slider/img-slider1.png" alt="">
+                    </div>
+                    <div class="col-2">
+                        <div class="container-pill">
+                            <p class="slider-pill"><i class="fas fa-user-md"></i> Plan Médico Familiar</p>
+                        </div>
+                        <h1>Salud Segura</h1>
+                        <p class="slider-txt">Brindamos un plan de salud anual enfocado a la protección de sus afiliados a través de coberturas prestacionales médicas o quirúrgicas a ser tratadas de manera exclusiva en la Clínica San Judas Tadeo o en el Centro de Medicina Externa Medex.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Slider 2  -->
+            <div class="item flex slide-2">
+                <div class="container flex container-slider">
+                    <div class="col-2 slider-img">
+                        <img src="/img/images/slider/img-slider2-Medicos-.png" alt="">
+                    </div>
+                    <div class="col-2">
+                        <div class="container-pill">
+                            <p class="slider-pill"><i class="fas fa-user-md"></i> Plan Médico Familiar</p>
+                        </div>
+                        <h2>Staff e Infraestructura de Primer Nivel</h2>
+                        <p class="slider-txt">Todos los servicios ofrecidos en nuestros locales cuenta con una amplia y cómoda infraestructura y tecnología avanzada.</p>
+                        <p class="slider-txt">A su vez contamos con un Staff médico calificado, que brindan una atención médica personalizada.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        
+            
+            
+        </div>
+    </div>
+    
 </section>
 
 <!-- tira slider (debajo del slider) -->
-<section class="tira-slider">
-
+<section class="tira-slider container">
+    <div class="container tira-item">
+        <div class="tira-img">
+            <img src="/img/icons/tira/icon1-escudo.svg" alt="" class="tira-icono">
+        </div>
+        <div class="tira-text">
+            <p class="tira-item-txt">
+                <strong>SUMA ASEGURADA</strong>
+                <br>
+                Hasta s/300,000<sup>00</sup> 
+            </p>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="container tira-item">
+        <div class="tira-img">
+            <img src="/img/icons/tira/icon3-estetoscopio.svg" alt="" class="tira-icono">
+        </div>
+        <div class="tira-text">
+            <p class="tira-item-txt">
+                <strong>ATENCIÓN</strong>
+                <br>
+                Más de 40 especialidades 
+            </p>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="container tira-item">
+        <div class="tira-img">
+            <img src="/img/icons/tira/icon4-manos.svg" alt="" class="tira-icono">
+        </div>
+        <div class="tira-text">
+            <p class="tira-item-txt">
+                <strong>PLANES ADAPTADOS</strong>
+                <br>
+                A tus necesidades
+            </p>
+        </div>
+    </div>
+    <!-- 4 -->
+    <div class="container tira-item">
+        <div class="tira-img">
+            <img src="/img/icons/tira/icon2-gps-.svg" alt="" class="tira-icono">
+        </div>
+        <div class="tira-text">
+            <p class="tira-item-txt">
+                <strong>ESTABLECIMIENTOS</strong>
+                <br>
+                En puntos estratégicos
+            </p>
+        </div>
+    </div>
 </section>
 
 <!-- ¿Por qué adquirir un Plan de Salud? -->
 <section class="porque">
-    <div class="container p-100">
-        <div class="col-2">
-            <h2>¿Por qué adquirir un Plan de Salud?</h2>
-            <img src="/img/site/barra.png" alt="" class="barra-txt">
-            <div class="porque-text">
-                <p>El Plan Médico Familiar "Salud Segura", cuenta con respaldo de la Clínica San Judas Tadeo y Medex, dos instituciones con amplio prestigio con más de 35 años al servicio de la salud de los peruanos.</p>
-                
-                <p>Contamos con un amplio staff de profesionales médicos en más de 40 especialidades, además de una moderna infraestructura hospitalaria y tecnología de punta, para brindarle un servicio eficiente y de calidad, que permita un diagnóstico rápido y preciso.</p>
-
-                <p>Salud Segura presenta dos planes médicos para tu elección: Plan Clásico y Premium, los cuales brindan cobertura en atenciones ambulatorias, hospitalarias, emergencias, maternidad, oncología, odontología y muchos servicios más. La inscripción en nuestros planes es desde el nacimiento hasta los 71 años.</p>
+    <div class="container p-100b">
+        <h3>¿Por qué adquirir un Plan de Salud?</h3>
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
+        <div class="porque-container">
+            <div class="col-2">
+                <div class="porque-text">
+                    <p>El Plan Médico Familiar "Salud Segura", cuenta con respaldo de la Clínica San Judas Tadeo y Medex, dos instituciones con amplio prestigio con más de 35 años al servicio de la salud de los peruanos.</p>
+                    
+                    <p>Contamos con un amplio staff de profesionales médicos en más de 40 especialidades, además de una moderna infraestructura hospitalaria y tecnología de punta, para brindarle un servicio eficiente y de calidad, que permita un diagnóstico rápido y preciso.</p>
+    
+                    <p>Salud Segura presenta dos planes médicos para tu elección: Plan Clásico y Premium, los cuales brindan cobertura en atenciones ambulatorias, hospitalarias, emergencias, maternidad, oncología, odontología y muchos servicios más. La inscripción en nuestros planes es desde el nacimiento hasta los 71 años.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-2 video-responsive">
-            <video class="video"  controls>
-                <source src="/video/salud-segura.mp4" type="video/mp4">
-              </video>
+            <div class="col-2 video-responsive">
+                <video class="video"  controls>
+                    <source src="/video/salud-segura.mp4" type="video/mp4">
+                  </video>
+            </div>
         </div>
     </div>
 </section>
@@ -139,7 +183,7 @@
 <section class="servicios">
     <div class="container p-100">
         <h3>Servicios y Beneficios</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-txt">
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
         <p class="subtilte">
             El beneficio máximo lo podrá utilizar en los siguientes servicios
         </p>
@@ -187,10 +231,10 @@
 
 <!-- que incluyen -->
 <section class="incluyen">
-    <div class="container">
+    <div class="container incluyen-container">
         <h2>¿Qué incluyen
             nuestros Planes Salud Segura?</h2>
-        <img src="/img/site/barra.png" alt="" class="barra-txt">
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
         <p class="subtitle">Salud Segura presenta dos planes médicos para tu elección. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying Lorem ipsum, or lipsum as it is sometimes known, is dummy text used</p>
         <div class="contenido">
             <div class="col-2">
@@ -218,7 +262,7 @@
 <section class="beneficios p-100">
     <div class="container">
         <h3>Beneficios</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-txt">
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
         
         <!-- Colocar planes de Salud Segura -->
         <p>Planes de Salud Segura</p>
@@ -230,7 +274,7 @@
     <div class="container">
         <div class="col-2">
             <h2>Inscripción Gratuita</h2>
-            <img src="/img/site/barra.png" alt="" class="barra-txt">
+            <img src="/img/site/barra.png" alt="" class="barra-colores">
             <p>En el mes de Diciembre, San Judas Tadeo y Medex te ayudan a cuidar de tu familia. Brindaremos inscripción gratuita a todos nuestros clientes.</p>
         </div>
         <div class="col-2">
@@ -243,7 +287,7 @@
 <section class="tarifario">
     <div class="container p-100">
         <h3>Tarifario</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-txt">
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
         <p class="subtitle">Te presentamos el siguiente listado, el cual indica el monto a pagar por plan escogido y por su respectiva edad.</p>
 
         <div class="lista">
@@ -257,7 +301,7 @@
 <section class="lugares">
     <div class="container">
         <h3>Lugares de Atención</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-txt">
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
         <p class="subtitle">Si eres un asegurado de Salud Segura, puedes recibir atención en la Clínica San Judas Tadeo y Medex.</p>
 
         <div class="contenido">
@@ -300,7 +344,7 @@
 <section class="preguntas">
     <div class="container">
         <h3>Preguntas frecuentes</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-txt">
+        <img src="/img/site/barra.png" alt="" class="barra-colores">
         <p class="subtitle">Encuentre las respuestas a las preguntas más frecuentes sobre la naturaleza de nuestra cobertura y sobre cómo protegemos a los afiliados en todo el mundo. </p>
         
         <!-- Acordeon con 26px -->
@@ -413,32 +457,53 @@
 <script src="/script/scripts.js"></script>
 
 
-<!-- <script>
-           jQuery(document).ready(function($){
-                $('.loop').owlCarousel({
-                center: true,
-                items: 1,
-                loop:true,
-                margin:10,
-                lazyLoad:true,
-                autoplay:false,
-                autoplayTimeout:6000,
-                autoplayHoverPause:true,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
+<script>
+        jQuery(document).ready(function($){
+            $('.loop').owlCarousel({
+            center: true,
+            items: 1,
+            loop:true,
+            margin:10,
+            lazyLoad:true,
+            autoplay:false,
+            autoplayTimeout:6000,
+            autoplayHoverPause:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
                 }
-            })
+            }
         })
-</script> -->
+    })
+    
+
+    // $('.instalaciones').owlCarousel({
+    //     items: 1,
+    //     loop:true,
+    //     margin:10,
+    //     center: true,
+    //     nav:false,
+    //     dots: true,
+    //     responsive:{
+    //         0:{
+    //             items:1
+    //         },
+    //         600:{
+    //             items:1
+    //         },
+    //         1000:{
+    //             items:1
+    //         }
+    //     }
+    // })
+</script>
 
 </body>
 </html>

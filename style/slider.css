@@ -1,0 +1,102 @@
+section.slider {
+    /* Margen que se le da por la cabecera fixed */
+    margin-top: var(--header-height);
+}
+
+.slider h1, .slider h2 {
+    padding-bottom: 1rem;
+}
+
+.slider p {
+    line-height: 29px;
+}
+
+.slider h2, .slider p {
+    color     : #fff;
+    text-align: left;
+}
+
+.slider .txt-slider{
+    font-size: var(--h5-font-size);
+}
+
+.slider .container-pill {
+    display: flex;
+}
+
+.slider .slider-pill {
+    background   : #fff;
+    border       : 1px solid var(--color-body);
+    color        : var(--color-body);
+    padding      : 4px 40px;
+    border-radius: var(--border-radius);
+    font-size    : var(--small-font-size);
+    margin-bottom: 20px;
+    font-weight  : 700;
+}
+
+.slider .slide-1 {
+    background-image : url("/img/images/slider/bck-slider1.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+}
+
+.slide-1 .img {
+    width : 42%!important;
+    margin: auto;
+}
+
+
+.slide-2 {
+    background-image : url("/img/images/slider/bck-slider2-hospital.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+}
+
+/* Capa de color, al contenido que se pondra encima se agregar position: relative; */
+.slider .slide-2:before {
+    content         : '';
+    position        : absolute;
+    background-color: #000;
+    top             : 0;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    opacity         : .3;
+}
+
+.slider .container-slider {
+    position: relative;
+}
+
+
+
+/* Flechas  */
+
+.owl-prev, .owl-next {
+    position   : absolute;
+    top        : 40%;
+    transform  : translate(-50%);
+    color      : #fff!important;
+    font-size  : 60px!important;
+    font-weight: bolder;
+    background : none!important;
+    outline    : 0;
+}
+.owl-prev {
+    left: 1%;
+}
+
+.owl-next {
+    right: 1%;
+}
+
+@media screen and (max-width: 425px) {
+    .owl-prev, .owl-next {
+        display: none;
+    }
+}

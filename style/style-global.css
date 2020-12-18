@@ -111,6 +111,8 @@ p {
     border-radius: .5rem;
 }
 
+
+/* Shortcode */
 .center {
     text-align: center;
 }
@@ -123,7 +125,7 @@ p {
 
 .container{
     width       : calc(100% - 2rem);
-    max-width   : var(--max-width);   /*Cambiar a variable*/
+    max-width   : var(--max-width);   
     margin-left : auto;
     margin-right: auto;
 }
@@ -138,7 +140,49 @@ p {
     max-width: 50%;
 }
 
+.p-100 {
+    padding-bottom: 100px;
+    padding-top   : 100px;
+}
+
+.p-100b{
+    padding-bottom: 100px;
+}
+
+.barra-colores{
+    padding-bottom: 32px;
+    padding-top   : 16px;
+}
+
+/* header:  tiene su propia hoja de estilos 
+
+ NAVBAR 
+
+ SLIDER */
 
 
-/* NAVBAR  */
 
+/* PORQUE */
+
+.porque .porque-container{
+    display    : flex;
+    align-items: center;
+    flex-wrap  : nowrap;
+}
+
+.porque .porque-text {
+    padding-right: 2rem;
+}
+
+.porque .video-responsive {
+    width : 100%;
+    height: 100%;
+}
+.porque .video-responsive video{
+    border: 2px solid #2a3b4754;
+}
+
+.porque .video {
+    width : 550px;
+    height: 320px;
+}
