@@ -112,6 +112,7 @@ p {
 }
 
 
+
 /* Shortcode */
 .center {
     text-align: center;
@@ -125,7 +126,7 @@ p {
 
 .container{
     width       : calc(100% - 2rem);
-    max-width   : var(--max-width);   
+    max-width   : var(--max-width);
     margin-left : auto;
     margin-right: auto;
 }
@@ -140,6 +141,10 @@ p {
     max-width: 50%;
 }
 
+.col-3 {
+    width: 33.33%;
+}
+
 .p-100 {
     padding-bottom: 100px;
     padding-top   : 100px;
@@ -149,9 +154,21 @@ p {
     padding-bottom: 100px;
 }
 
+
+
 .barra-colores{
     padding-bottom: 32px;
     padding-top   : 16px;
+}
+
+.barra-center {
+    margin : auto;
+    display: block;
+}
+
+.subtitle {
+    font-weight   : 700 ;
+    padding-bottom: 50px;
 }
 
 /* header:  tiene su propia hoja de estilos 
@@ -185,4 +202,64 @@ p {
 .porque .video {
     width : 550px;
     height: 320px;
+}
+
+
+/* Tira Intermedia  */
+
+section.tira-intermedia {
+    position: relative;
+    padding : 4em 0;
+}
+
+section.tira-intermedia:after {
+    background-image: url("/img/images/fondo\ rayas.png");
+    content         : "";
+    display         : block;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    opacity         : 0.1;
+    z-index         : var(--z-back);
+}
+
+.tira-intermedia .numero{
+    color         : var(--secundary-color);
+    font-size     : 52px;
+    font-weight   : 700;
+    padding-bottom: 40px;
+}
+
+.tira-intermedia .text {
+    justify-content: center;
+}
+
+.tira-intermedia p {
+    padding    : 0;
+    font-weight: 700;
+    text-align : center;
+}
+
+.tira-intermedia i.fas.fa-briefcase, .tira-intermedia i.fas.fa-user-friends, .tira-intermedia i.fas.fa-check-circle {
+    font-size: 36px;
+    padding-right: 20px;
+    color: var(--primary-color);
+}
+
+/* incluyen  */
+
+.incluyen .subtitle {
+    padding-right: 8em;
+}
+
+.incluyen .lista {
+    padding-left: 4em;
+}
+
+.incluyen ul {
+    padding-left  : 2em;
+    line-height   : 2em;
+    padding-bottom: 1em;
 }

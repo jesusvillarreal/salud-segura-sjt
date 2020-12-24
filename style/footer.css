@@ -1,0 +1,88 @@
+footer {
+    background-color: var(--primary-color-alt);
+    color           : #fff;
+    font-size       : var(--small-font-size);
+    padding-top     : 3em;
+    padding-bottom  : 1em;
+}
+
+footer .footer-grid {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap      : 30px;
+    grid-row-gap         : 20px;
+    grid-template-rows   : auto;
+    align-items          : baseline;
+    justify-content      : center;
+}
+
+footer h5 {
+    padding-bottom: 20px;
+}
+
+/* Iconos */
+i.fas.fa-map-marker-alt, i.far.fa-check-circle, i.fas.fa-phone-alt, i.fab.fa-whatsapp {
+    padding-right: 12px;
+}
+
+i.far.fa-check-circle {
+    color    : var(--primary-color);
+    font-size: 18px;
+}
+
+/* Fin de Iconos */
+
+footer .flex {
+    display    : flex;
+    align-items: baseline;
+}
+
+/* Linea que separa el menu con el copyright */
+footer .line.footer {
+    width           : auto;
+    height          : 1px;
+    margin-top      : 16px;
+    margin-bottom   : 16px;
+    padding-top     : 0px;
+    padding-bottom  : 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column     : 1/4;
+}
+
+.linkSocial {
+    width          : 40px;
+    height         : 40px;
+    border         : 2px solid #FFF;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border-radius  : 50%;
+    margin-right   : 1rem;
+}
+
+.linkSocial:hover {
+    border          : 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+
+@media(max-width:425px) {
+    .copy {
+        width    : 100%;
+        max-width: 100%;
+        font-size: .85rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        padding              : 0 20px;
+    }
+
+    .line.footer {
+        grid-column: auto;
+    }
+
+    footer {
+        font-size: .9rem;
+    }
+} 

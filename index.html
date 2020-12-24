@@ -20,7 +20,9 @@
         <link rel="stylesheet" href="/style/header.css">
         <link rel="stylesheet" href="/style/slider.css">
         <link rel="stylesheet" href="/style/tira.css">
+        <link rel="stylesheet" href="/style/footer.css">
         <link rel="stylesheet" href="/style/flotantes.css">
+
     
         <!-- OWL Carrousel -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
@@ -182,9 +184,9 @@
 <!-- Servicios y Beneficios -->
 <section class="servicios">
     <div class="container p-100">
-        <h3>Servicios y Beneficios</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-colores">
-        <p class="subtilte">
+        <h4 class="center">Servicios y Beneficios</h4>
+        <img src="/img/site/barra.png" alt="" class="barra-colores barra-center">
+        <p class="subtitle center p-200x">
             El beneficio máximo lo podrá utilizar en los siguientes servicios
         </p>
         <div class="tab-servicios">
@@ -195,34 +197,37 @@
 </section>
 
 <!-- Tira intermedia -->
-<section class="tira-intermedia">
-<div class="container">
+<section class="tira-intermedia ">
+<div class="container flex">
     <div class="col-3">
-        <p>+ 10,000</p>
-        <div class="text">
-            <img src="" alt="">
-            <p>Personas afiliadas al nuestros planes</p>
+        <p class="center numero">+ 10,000</p>
+        <div class="text flex">
+            <i class="fas fa-user-friends"></i>
+            <p>Personas afiliadas
+                <br>al nuestros planes</p>
         </div>
     </div>
     <div class="col-3">
-        <p>50%</p>
-        <div class="text">
-            <img src="" alt="">
+        <p class="center numero">50%</p>
+        <div class="text flex">
+            <i class="fas fa-briefcase"></i>
             <p>Cobertura de enfermedades
-                preexistentes</p>
+                <br>preexistentes</p>
         </div>
     </div>
     <div class="col-3">
-        <p><sub style="font-size: .5em; bottom: 0; ">s/</sub>
+        <p class="center numero"><sub style="font-size: .5em; bottom: 0; ">s/</sub>
             300,000
             <sup style="
                 font-size: 0.5em;
-                top: -0.6em;">.00</sup>
+                top: -0.6em;
+                left: -10px;">
+                .00</sup>
         </p>
-        <div class="text">
-            <img src="" alt="">
-            <p>Como suma
-                asegurada</p>
+        <div class="text flex">
+            <i class="fas fa-check-circle"></i>
+            <p>Como una
+               <br>suma asegurada</p>
         </div>
     </div>
    
@@ -230,17 +235,17 @@
 </section>
 
 <!-- que incluyen -->
-<section class="incluyen">
+<section class="incluyen p-100">
     <div class="container incluyen-container">
-        <h2>¿Qué incluyen
-            nuestros Planes Salud Segura?</h2>
+        <h3>¿Qué incluyen
+            <br>nuestros Planes Salud Segura?</h3>
         <img src="/img/site/barra.png" alt="" class="barra-colores">
         <p class="subtitle">Salud Segura presenta dos planes médicos para tu elección. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying Lorem ipsum, or lipsum as it is sometimes known, is dummy text used</p>
-        <div class="contenido">
-            <div class="col-2">
-                <img src="/img/images/familia-salud-segura.jpg" alt="">
+        <div class="contenido flex">
+            <div class="col-2 center">
+                <img src="/img/images/familia-salud-segura.jpg" alt="" width="90%">
             </div>
-            <div class="col-2">
+            <div class="col-2 lista">
                 <p>Brindamos cobertura en:</p>
                 <ul>
                     <li>Atenciones Ambulatorias</li>
@@ -259,13 +264,36 @@
 
 
 <!-- Beneficios  -->
-<section class="beneficios p-100">
+<section class="beneficios p-100b">
     <div class="container">
-        <h3>Beneficios</h3>
-        <img src="/img/site/barra.png" alt="" class="barra-colores">
+        <h4 class="center">Beneficios</h4>
+        <img src="/img/site/barra.png" alt="" class="barra-colores barra-center">
         
         <!-- Colocar planes de Salud Segura -->
         <p>Planes de Salud Segura</p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="empty"></td>
+                    <td>Plan Clasico</td>
+                    <td class="empty"></td>
+                    <td>Plan Premium</td>
+
+                </tr>
+                <tr>
+                    <td>Beneficios máximo anual por persona</td>
+                    <td class="empty"></td>
+                    <td>S/ 200,000.00</td>
+                    <td class="empty"></td>
+                    <td>S/ 200,000.00</td>
+                </tr>
+               
+            </tbody>
+        </table>
+
+
     </div>
 </section>
 
@@ -397,13 +425,13 @@
             <div class="flex footer">
                 
                 <a href="https://www.facebook.com/sanjudastadeoclinica" class="linkSocial" target=”_blank”>
-                    <img src="/images/icons/Footer/iconFacebook.svg" alt="" height="auto" width="auto" loading="lazy">
+                    <img src="/img/icons/site/Footer/iconFacebook.svg" alt="" height="auto" width="auto" loading="lazy">
                 </a>
                 <a href="https://www.instagram.com/clinica_sanjudastadeo" class="linkSocial" target=”_blank”>
-                    <img src="/images/icons/Footer/iconInstagram.svg" alt="" height="auto" width="auto" loading="lazy">
+                    <img src="/img/icons/site/Footer/iconInstagram.svg" alt="" height="auto" width="auto" loading="lazy">
                 </a>
                 <a href="https://pe.linkedin.com/company/cl%C3%ADnica-san-judas-tadeo" class="linkSocial" target=”_blank”>
-                    <img src="/images/icons/Footer/iconLinkedin.svg" alt="" height="auto" width="auto" loading="lazy">
+                    <img src="/img/icons/site/Footer/iconLinkedin.svg" alt="" height="auto" width="auto" loading="lazy">
                 </a>
                 
             </div>
