@@ -1,0 +1,21 @@
+/* La seccion se llama "beneficios" */
+
+.beneficios table {
+    margin: 0 auto;
+}
+
+table tbody th {
+    position: sticky ;
+    position: -webkit-sticky ;
+    top: 80px;
+}
+
+
+.beneficios td.empty {
+    padding: 0 10px;
+}
+
+table tr th, table tr td {
+    padding: 1.25em 0.625em;
+    font-size: 1.125em;
+}
