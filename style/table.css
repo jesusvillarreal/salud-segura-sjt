@@ -15,7 +15,32 @@ table tbody th {
     padding: 0 10px;
 }
 
-table tr th, table tr td {
-    padding: 1.25em 0.625em;
-    font-size: 1.125em;
+ table tr td {
+    padding  : 0.4em 1em;
+    font-size: var(--normal-font-size);
+}
+
+table tr th {
+    padding   : 1em 0.5em;
+    font-size : 1.125em;
+    background: var(--color-alt);
+    color     : #fff;
+}
+
+.subtitle-table {
+    border-bottom: 2px solid red;
+    padding      : 0.8em 1em .4em;
+    font-weight  : 700;
+}
+
+.subtitle-table-small {
+    text-align   : center;
+    font-size    : var(--small-font-size);
+    border-bottom: 2px solid red;
+}
+
+.list-detalles {
+    font-size : var(--small-font-size);
+    text-align: center;
+    opacity   : 0.8;
 }
