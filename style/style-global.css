@@ -135,6 +135,9 @@ p {
     display    : flex;
     align-items: center;
 }
+.flexx {
+    display: flex;
+}
 
 .col-2 {
     width    : 50%;
@@ -143,6 +146,10 @@ p {
 
 .col-3 {
     width: 33.33%;
+}
+
+.col-7 {
+    width: 66.67%;
 }
 
 .p-100 {
@@ -204,6 +211,83 @@ p {
     height: 320px;
 }
 
+/* servicios  */
+section.servicios {
+    background-image: url(../img/site/dot.png);
+}
+
+.tabs {
+    width     : 90%;
+    height    : 500px;
+    margin    : auto;
+    padding   : 30px 20px;
+    background: #f5f5f5;
+    box-shadow: 5px 5px 10px 5px #ccc;
+    overflow  : hidden;
+  }
+  .tabs .tab-header {
+    float       : left;
+    width       : 180px;
+    height      : 100%;
+    border-right: 1px solid #ccc;
+    padding     : 50px 0px;
+  }
+  .tabs .tab-header > div {
+    height      : 50px;
+    line-height : 50px;
+    font-size   : 16px;
+    font-weight : 600;
+    color       : #888;
+    cursor      : pointer;
+    padding-left: 10px;
+  }
+  .tabs .tab-header > div:hover,
+  .tabs .tab-header > div.active {
+    color: #00acee;
+  }
+  .tabs .tab-header div i {
+    display     : inline-block;
+    margin-left : 10px;
+    margin-right: 5px;
+  }
+  .tabs .tab-content {
+    position: relative;
+    height  : 100%;
+    overflow: hidden;
+  }
+  .tabs .tab-content > div > i {
+    display      : inline-block;
+    width        : 50px;
+    height       : 50px;
+    background   : #555;
+    color        : #f5f5f5;
+    font-size    : 25px;
+    font-weight  : 600;
+    text-align   : center;
+    line-height  : 50px;
+    border-radius: 50%;
+  }
+  .tabs .tab-content > div {
+    position  : absolute;
+    text-align: left;
+    padding   : 40px 20px;
+    top       : -200%;
+    transition: all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    top: 0px;
+  }
+  
+  .tabs .tab-indicator {
+    position  : absolute;
+    width     : 4px;
+    height    : 50px;
+    background: #00acee;
+    left      : 198px;
+    top       : 80px;
+    transition: all 500ms ease-in-out;
+  }
+
 
 /* Tira Intermedia  */
 
@@ -243,9 +327,9 @@ section.tira-intermedia:after {
 }
 
 .tira-intermedia i.fas.fa-briefcase, .tira-intermedia i.fas.fa-user-friends, .tira-intermedia i.fas.fa-check-circle {
-    font-size: 36px;
+    font-size    : 36px;
     padding-right: 20px;
-    color: var(--primary-color);
+    color        : var(--primary-color);
 }
 
 /* incluyen  */
@@ -263,3 +347,153 @@ section.tira-intermedia:after {
     line-height   : 2em;
     padding-bottom: 1em;
 }
+
+/* Tira Inscripcion gratuita */
+
+section.tira-color {
+    position  : relative;
+    padding   : 4em 0;
+    margin-top: 60px;
+    height    : 300px;
+}
+
+section.tira-color:after {
+    background-image   : url("../img/images/fondo-tira.jpg");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    content            : "";
+    display            : block;
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    width              : 100%;
+    height             : 100%;
+    opacity            : 0.1;
+    z-index            : var(--z-back);
+}
+
+section.tira-color .img-tira {
+    width     : 80%;
+    margin-top: -150px;
+}
+
+section.tira-color .container {
+    display: flex;
+    
+}
+
+/* Lugares de Atencion  */
+
+section.lugares .contenido {
+    background-color         : var(--primary-color-alt);
+    border-top-left-radius   : 12px;
+    border-bottom-left-radius: 12px;
+    color                    : #fff;
+}
+
+section.lugares .item-list {
+    margin-bottom: 40px;
+}
+
+section.lugares .contacto {
+    padding: 30px;
+}
+
+section.lugares .contenido-texto-tit {
+    line-height   : 26px;
+    font-weight   : 500;
+    margin-left   : 12px;
+    font-size     : 22px;
+    padding-bottom: 0px;
+}
+section.lugares .contenido-texto-sub {
+    margin-bottom: 40px;
+    font-size    : 17px;
+    line-height  : 20px;
+}
+
+section.lugares .sede, section.lugares .sede2 {
+    padding: 20px 0;
+}
+
+section.lugares .sede2 {
+    margin-top: 40px;
+}
+
+section.lugares .container.flexx {
+    margin-left : 0px;
+    margin-right: 0px;
+}
+
+
+
+/* Acordeon */
+
+.accordion {
+    width: 90%;
+
+}
+
+.accordion .accordion-item{
+    background-color: #fff;
+    color           : #111;
+    margin          : 1rem 0;
+    border-radius   : var(--border-radius);
+    box-shadow      : 0 1px 8px 0 rgba(0,0,0,0.25);
+}
+
+.accordion .accordion-item-header {
+    padding      : 0.5rem 3rem 0.5rem 1rem;
+    min-height   : 3.5rem;
+    line-height  : 1.25rem;
+    display      : flex;
+    align-items  : center;
+    position     : relative;
+    cursor       : pointer;
+    color        : var(--color-body);
+    border-radius: var(--border-radius);
+}
+.accordion .accordion-item-header:hover{
+    background-color: var(--primary-color);
+    color           : #fff;
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow  : hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion .accordion-item-header::before {
+    content     : '+';
+    display     : block;
+    right       : 15px;
+    top         : 50%;
+    margin-right: 20px;
+    font-size   : 1.3em;
+}
+
+.accordion .accordion-item-header.active::before {
+    content: '-';
+}
+
+.accordion .accordion-item-body-content {
+    padding         : 1rem;
+    line-height     : 1.5rem;
+    border-top      : 1px solid;
+    border-image    : linear-gradient(to right, transparent, var(--primary-color), transparent) 1;
+    font-size       : var(--small-font-size);
+    background-color: #f0f4f7;
+    padding-left    : 2em;
+}
+
+.accordion .contentBox.active .content {
+    height : 150px;
+    padding: 10px;
+}
+
+.accordion  li{
+    margin-left: 40px;
+}
+/* Fin accordion  */
